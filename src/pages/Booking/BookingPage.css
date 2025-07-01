@@ -1,0 +1,104 @@
+.booking-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-banner-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.booking-movie-banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.movie-title {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.booking-section {
+  margin-bottom: 2rem;
+}
+
+.booking-section h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.theatre-block {
+  margin-bottom: 1.5rem;
+}
+
+.theatre-name {
+  margin-bottom: 0.4rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.options button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.options button.selected {
+  background-color: #e50914;
+  color: white;
+  border-color: #b2060f;
+}
+
+.options button:hover {
+  background-color: #d1d1d1;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.continue-btn {
+  padding: 0.75rem 2rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.continue-btn:hover {
+  background-color: #b2060f;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}

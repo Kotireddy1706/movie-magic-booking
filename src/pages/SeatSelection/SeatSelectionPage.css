@@ -1,0 +1,82 @@
+.seat-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.scooter-img {
+  width: 150px;
+  margin: 1rem 0;
+}
+
+.seat-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.seat-number {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #eee;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seat-number.active {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+}
+
+.divider {
+  margin: 2rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.classes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.class-box {
+  text-align: center;
+}
+
+.class-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.class-box strong {
+  display: block;
+  margin: 5px 0;
+}
+
+.status {
+  color: orange;
+  font-size: 0.85rem;
+}
+
+.select-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.select-btn:hover {
+  background-color: #b2060f;
+}

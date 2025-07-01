@@ -1,0 +1,83 @@
+.booking-summary-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.summary-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.summary-box h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #e50914;
+  text-align: center;
+}
+
+.summary-box p {
+  font-size: 18px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.summary-box p strong {
+  color: #333;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-proceed {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proceed:hover {
+  background-color: #b2060f;
+}
+
+.btn-modify {
+  margin-top: 12px;
+  background-color: white;
+  color: #e50914;
+  border: 2px solid #e50914;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-modify:hover {
+  background-color: #ffe8ea;
+}
+
+.modify-link {
+  margin-top: 10px;
+  text-align: center;
+  color: #e50914;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modify-link:hover {
+  color: #b2060f;
+}

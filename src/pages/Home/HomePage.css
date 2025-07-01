@@ -1,0 +1,103 @@
+/* HomePage.css */
+
+.homepage {
+  font-family: Arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+.hero-banner {
+  background-color: #000;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain; /* show full image */
+  background-color: #000;
+  padding: 10px;
+}
+
+.movie-info {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.movie-info h5 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  color: #555;
+  min-height: 48px;
+  line-height: 1.4;
+}
+
+.btn-book {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-book:hover {
+  background-color: #b2060f;
+}
+
+/* Mobile view - 1 card per row */
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: 90%;
+  }
+}

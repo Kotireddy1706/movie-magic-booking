@@ -1,0 +1,77 @@
+.visual-seat-layout {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.seat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.section-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e50914;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+}
+
+.row-label {
+  width: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.seat:hover {
+  background-color: #ddd;
+}
+
+.seat.selected {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+}
+
+.screen-text {
+  margin: 30px 0 10px;
+  font-style: italic;
+  color: #888;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.continue-btn {
+  padding: 10px 25px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background-color: #b2060f;
+}
