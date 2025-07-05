@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Ticket – Movie Magic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .ticket {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 50px auto;
+    }
+    .ticket-header {
+      border-bottom: 2px dashed #ccc;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+    .qr {
+      width: 120px;
+      height: 120px;
+      background: #ddd;
+      display: inline-block;
+      border-radius: 8px;
+      margin-top: 1rem;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+      color: #555;
+    }
+    .label {
+      font-weight: 600;
+      color: #333;
+    }
+    .value {
+      font-weight: 500;
+      color: #000;
+    }
+    .movie-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #e50914;
+    }
+    .btn-group-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ticket">
+  <div class="text-center ticket-header">
+    <h2 class="movie-title" id="movie"></h2>
+    <p>🎟️ Movie Ticket Confirmation</p>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <p><span class="label">Theatre:</span> <span class="value" id="theatre"></span></p>
+      <p><span class="label">Date:</span> <span class="value" id="date"></span></p>
+      <p><span class="label">Time:</span> <span class="value" id="time"></span></p>
+    </div>
+    <div class="col-md-6">
+      <p><span class="label">Seats:</span> <span class="value" id="seats"></span></p>
+      <p><span class="label">Total Tickets:</span> <span class="value" id="count"></span></p>
+      <p><span class="label">Price:</span> ₹<span class="value" id="price"></span></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <p><span class="label">Email:</span> <span class="value" id="email"></span></p>
+      <p><span class="label">Mobile:</span> <span class="value" id="mobile"></span></p>
+    </div>
+    <div class="col-md-6 text-center">
+      <p><span class="label">Payment Mode:</span> <span class="value" id="payment"></span></p>
+      <div class="qr">QR CODE</div>
+    </div>
+  </div>
+
+  <div class="btn-group-actions">
+    <button class="btn btn-danger" onclick="window.print()">Print Ticket</button>
+    <a href="/" class="btn btn-outline-secondary">Back to Home</a>
+  </div>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const fields = ["movie", "date", "time", "theatre", "count", "seats", "price", "email", "mobile", "payment"];
+  fields.forEach(field => {
+    const value = params.get(field);
+    document.getElementById(field).textContent = decodeURIComponent(value || '');
+  });
+</script>
+
+</body>
+</html>
